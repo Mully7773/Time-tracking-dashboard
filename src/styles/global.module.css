@@ -1,3 +1,7 @@
+:root {
+  --main-bg-color: #0f1424;
+}
+
 *,
 *::after,
 *::before {
@@ -14,7 +18,12 @@ body {
   height: 100%;
 }
 
+html {
+  font-family: "Rubic", sans-serif;
+}
+
 body {
+  background-color: var(--main-bg-color);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
