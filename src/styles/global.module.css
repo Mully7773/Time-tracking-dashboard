@@ -3,6 +3,7 @@
   --main-card-bg: #1c1f4a;
   --dark-text: #6f76c8;
   --light-text: #bdc1ff;
+  --white-text: #ffffff;
   --report-for-bg: #5847eb;
   --work-bg: #ff8c66;
   --play-bg: #56c2e6;
@@ -11,8 +12,10 @@
   --social-bg: #7536d3;
   --self-care-bg: #f1c65b;
 
-  --primary-font: "Rubic", sans-serif;
-  --card-title-fs: 18px;
+  --primary-font: "Rubik", sans-serif;
+  --card-title-fs: 1.8rem;
+
+  --primary-br: 1.5rem;
 }
 
 *,
@@ -33,12 +36,20 @@ body {
 
 html {
   font-family: var(--primary-font);
+  font-size: 62.5%;
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--app-bg);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  font-weight: 300;
+  color: var(--white-text);
 }
 
 img,
@@ -65,4 +76,29 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:link,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+}
+
+:focus {
+  outline: 0.2rem dashed var(--light-text);
+  outline-offset: 0.3rem;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+  outline-offset: 0rem;
+}
+
+:focus-visible {
+  outline: 0.2rem dashed var(--light-text);
+  outline-offset: 0.3rem;
 }

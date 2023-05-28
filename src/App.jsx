@@ -1,11 +1,12 @@
+import AppLayout from "./components/AppLayout";
 import Button from "./components/Button";
+import SidebarProfile from "./components/SidebarProfile";
 
 function App() {
   return (
-    <div>
-      <p>dsgdfg</p>
-      <Button></Button>
-    </div>
+    <AppLayout>
+      <SidebarProfile />
+    </AppLayout>
   );
 }
 

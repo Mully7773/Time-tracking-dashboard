@@ -1,0 +1,9 @@
+.appContainer {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 25.2rem);
+  grid-template-rows: 26.5rem 26.5rem;
+  height: fit-content;
+  width: 110rem;
+  margin: 0 auto;
+}
