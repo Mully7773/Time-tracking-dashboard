@@ -1,5 +1,18 @@
 :root {
-  --main-bg-color: #0f1424;
+  --app-bg: #0f1424;
+  --main-card-bg: #1c1f4a;
+  --dark-text: #6f76c8;
+  --light-text: #bdc1ff;
+  --report-for-bg: #5847eb;
+  --work-bg: #ff8c66;
+  --play-bg: #56c2e6;
+  --study-bg: #ff5c7c;
+  --exercise-bg: #4acf81;
+  --social-bg: #7536d3;
+  --self-care-bg: #f1c65b;
+
+  --primary-font: "Rubic", sans-serif;
+  --card-title-fs: 18px;
 }
 
 *,
@@ -19,11 +32,11 @@ body {
 }
 
 html {
-  font-family: "Rubic", sans-serif;
+  font-family: var(--primary-font);
 }
 
 body {
-  background-color: var(--main-bg-color);
+  background-color: var(--app-bg);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
