@@ -10,7 +10,6 @@
   padding: 3rem;
   background-color: var(--main-card-bg);
   border-radius: var(--primary-br);
-  cursor: pointer;
   transition: all 0.3s;
 }
 
@@ -34,6 +33,7 @@
   height: 2.8rem;
   width: auto;
   stroke: var(--light-text);
+  cursor: pointer;
 }
 
 .current_hours {
