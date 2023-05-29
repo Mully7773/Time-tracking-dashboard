@@ -1,6 +1,46 @@
-.cell {
+.outer_cell {
   background-repeat: no-repeat;
   background-position: right 2rem top -1rem;
   overflow: hidden;
   border-radius: var(--primary-br);
+}
+
+.inner_cell {
+  margin-top: 4rem;
+  padding: 3rem;
+  background-color: var(--main-card-bg);
+  border-radius: var(--primary-br);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.inner_cell:hover {
+  background-color: var(--main-card-bg-hover);
+}
+
+.inner_cell__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.see_more_icon {
+  height: 2.8rem;
+  width: auto;
+  stroke: var(--light-text);
+}
+
+.current_hours {
+  font-size: 5.5rem;
+  font-weight: 200;
+}
+
+.previous_hours {
+  color: var(--light-text);
 }
