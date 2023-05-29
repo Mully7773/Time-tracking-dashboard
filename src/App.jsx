@@ -1,11 +1,13 @@
 import AppLayout from "./components/AppLayout";
-import Button from "./components/Button";
+
 import SidebarProfile from "./components/SidebarProfile";
+import TimeCells from "./components/TimeCells";
 
 function App() {
   return (
     <AppLayout>
       <SidebarProfile />
+      <TimeCells />
     </AppLayout>
   );
 }
