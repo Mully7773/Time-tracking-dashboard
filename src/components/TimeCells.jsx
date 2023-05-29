@@ -3,7 +3,11 @@ import jsonData from "../data.json";
 import styles from "../styles/components/TimeCells.module.css";
 import MoreHorizontalIcon from "../../public/more-horizontal.svg";
 
-const TimeCells = () => {
+const TimeCells = ({ active }) => {
+  console.log(active);
+  const activeTime = active.find((time) => time.active);
+  const selectedTime = activeTime ? activeTime.id : "";
+  console.log(selectedTime);
   const [timeData, setTimeData] = useState([]);
 
   const getBackgroundColor = (colorVariable_) => {
@@ -43,12 +47,20 @@ const TimeCells = () => {
               </div>
               <div className={styles.inner_cell__middle}>
                 <span className={styles.current_hours}>
-                  {cell.timeframes.daily.current}hrs
+                  {`${cell.timeframes[selectedTime]?.current}`}hrs
                 </span>
               </div>
               <div className={styles.inner_cell__bottom}>
                 <span className={styles.previous_hours}>
-                  Last Day - {cell.timeframes.daily.previous}
+                  Last{" "}
+                  {selectedTime === "daily"
+                    ? "Day"
+                    : selectedTime === "weekly"
+                    ? "Week"
+                    : selectedTime === "monthly"
+                    ? "Month"
+                    : ""}{" "}
+                  - {cell.timeframes[selectedTime]?.previous}
                 </span>
               </div>
             </div>

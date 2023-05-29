@@ -12,7 +12,7 @@ function App() {
   return (
     <AppLayout>
       <SidebarProfile active={active} setActive={setActive} />
-      <TimeCells />
+      <TimeCells active={active} />
     </AppLayout>
   );
 }
