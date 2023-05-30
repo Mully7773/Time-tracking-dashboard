@@ -103,3 +103,9 @@ a:visited {
   outline: 0.2rem dashed var(--light-text);
   outline-offset: 0.3rem;
 }
+
+@media (max-width: 1050px) {
+  html body {
+    height: auto;
+  }
+}

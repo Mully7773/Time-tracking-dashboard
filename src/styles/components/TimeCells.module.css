@@ -49,3 +49,23 @@
 .previous_hours {
   color: var(--light-text);
 }
+
+@media (max-width: 1050px) {
+  .outer_cell {
+    height: fit-content;
+  }
+
+  .inner_cell__top {
+    margin-bottom: 0;
+  }
+
+  .mobile_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .current_hours {
+    font-size: 4.6rem;
+  }
+}

@@ -54,6 +54,7 @@ const TimeCells = ({ active }) => {
               <AnimatePresence>
                 {visible && (
                   <motion.div
+                    className={styles.mobile_flex}
                     key={`${cell.title}-${selectedTime}`}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

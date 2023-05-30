@@ -7,3 +7,12 @@
   width: 110rem;
   margin: 0 auto;
 }
+
+@media (max-width: 1050px) {
+  .appContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: auto;
+    padding: 4rem 2rem;
+  }
+}
