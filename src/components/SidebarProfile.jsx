@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "../styles/components/SidebarProfile.module.css";
 
 const SidebarProfile = ({ active, setActive }) => {
@@ -37,30 +36,6 @@ const SidebarProfile = ({ active, setActive }) => {
               </button>
             </li>
           ))}
-          {/* <li>
-            <button
-              className={active ? styles.active : ""}
-              onClick={handleTimeChange}
-            >
-              daily
-            </button>
-          </li>
-          <li>
-            <button
-              className={active ? styles.active : ""}
-              onClick={handleTimeChange}
-            >
-              weekly
-            </button>
-          </li>
-          <li>
-            <button
-              className={active ? styles.active : ""}
-              onClick={handleTimeChange}
-            >
-              monthly
-            </button>
-          </li> */}
         </ul>
       </div>
     </section>
