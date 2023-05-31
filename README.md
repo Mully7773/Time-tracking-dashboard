@@ -1,7 +1,4 @@
-# Time-tracking-dashboard
-
 <h1 align='center'>Time-tracking-dashboard</h1>
-
 <div align="center">
   <h3>
     <a href="https://time-tracking-dashboard-nm.netlify.app" target="_blank" color="white">
@@ -10,7 +7,7 @@
   </h3>
 </div>
 <div align="center">
-   A dashboard that tracks the amount of time spent on various activities. Users can toggle between daily, weekly, and monthly time accruals.
+  <p> A dashboard that tracks the amount of time spent on various activities. Users can toggle between daily, weekly, and monthly time accruals.</p>
 </div>
 <br/>
 <br/>
