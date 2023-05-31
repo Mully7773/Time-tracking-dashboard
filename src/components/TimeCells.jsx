@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import jsonData from "../data.json";
 import styles from "../styles/components/TimeCells.module.css";
-import MoreHorizontalIcon from "../../public/more-horizontal.svg";
+import MoreHorizontalIcon from "../assets/more-horizontal.svg";
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
 
 const TimeCells = ({ active }) => {
